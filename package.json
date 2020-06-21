@@ -1,0 +1,19 @@
+{
+  "name": "mysql-node",
+  "version": "1.0.0",
+  "description": "putting it all together: docker, mysql, node, knex",
+  "main": "app/index.js",
+  "scripts": {
+    "start": "node app/index.js",
+    "migrate": "npx knex migrate:latest",
+    "rollback": "npx knex migrate:rollback",
+    "docker": "docker-compose up"
+  },
+  "author": "Josh Mu",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "knex": "^0.21.1",
+    "mysql": "^2.18.1"
+  }
+}
